@@ -1,3 +1,5 @@
+//CÁCH 1
+//----------------------------------------------------------
 DaThuc tinhDaoHam(DaThuc d){
     DaThuc kq = khoitao();
     Position p = d->Next;
@@ -12,3 +14,22 @@ DaThuc tinhDaoHam(DaThuc d){
     }
     return kq;
 }
+//----------------------------------------------------------
+//CÁCH 2
+DaThuc tinhDaoHam( DaThuc D)
+{
+    DaThuc Kq =khoitao();
+    Position p=D;
+    DonThuc x;
+    while (p->Next!= NULL){  
+        x.he_so = p->Next->e.he_so * p->Next->e.bac;
+        x.bac = p->Next->e.bac-1;
+        if (x.he_so!=0){
+        chenDonThuc( x, &Kq);
+        }
+        p=p->Next;
+    }
+    
+    return Kq;
+}
+//----------------------------------------------------------
