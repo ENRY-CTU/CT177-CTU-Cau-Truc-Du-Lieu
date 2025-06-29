@@ -1,4 +1,4 @@
-#Cách 1
+//#Cách 1
 //----------------------------------------------------------
 void chenDonThuc(DonThuc s, DaThuc *L){
     Position p = *L;
@@ -23,7 +23,7 @@ void chenDonThuc(DonThuc s, DaThuc *L){
     }
 }
 //----------------------------------------------------------
-#Cách 2
+//#Cách 2
 void chenDonThuc(DonThuc s, DaThuc *L){
     Position p = (*L);
     int found = 0;
