@@ -1,9 +1,9 @@
-#Khai báo đơn thức
+//Khai báo đơn thức
 typedef struct {
     double he_so;
     int bac;
 } DonThuc;
-#Khai báo đa thức
+//Khai báo đa thức
 struct Node{
     DonThuc e;
     struct Node* Next;
