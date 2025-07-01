@@ -53,7 +53,7 @@ void hienthi(DanhSach L){
         printf("%s - %s - %.2f - %.2f - %.2f\n", L.A[i].MSSV, L.A[i].HoTen, L.A[i].DiemLT, L.A[i].DiemTH1, L.A[i].DiemTH2);
     }
 }
-void lietkeDat(DanhSach L){
+void lietkeKhongDat(DanhSach L){
     printf("Sinh vien KHONG DAT\n");
     for(int i = 0; i < L.n; i++){
         float tong = 0;
@@ -67,6 +67,6 @@ int main(){
     DanhSach L = dsRong();
     L = nhap();
     hienthi(L);
-    lietkeDat(L);
+    lietkeKhongDat(L);
     return 0;
 }
