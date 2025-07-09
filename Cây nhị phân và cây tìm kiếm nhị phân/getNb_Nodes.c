@@ -6,3 +6,11 @@ int getNb_Nodes(Tree T){
     count += getNb_Nodes(T->Right);
     return count;
 }
+//
+int getNb_Nodes( Tree T)
+{
+    if (T==NULL) return 0;
+    else
+        return 1 +getNb_Nodes(T->Left) + getNb_Nodes(T->Right);
+    
+}
