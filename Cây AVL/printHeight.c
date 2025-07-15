@@ -1,6 +1,8 @@
-void printHeight(AVLTree T) {
+void printHeight(int height, AVLTree T) {
     if (T == NULL) return;
-    printf("(%d - %d); ", T->Key, getHeight(T));
-    printHeight(T->Left);
-    printHeight(T->Right);
+    if (getHeight(T) == height) {
+        printf("%d ", T->Key);
+    }
+    printHeight(height, T->Left);
+    printHeight(height, T->Right);
 }
