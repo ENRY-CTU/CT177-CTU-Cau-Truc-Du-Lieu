@@ -5,7 +5,6 @@ void deleteNode(int x, Tree *T) {
     } else if (x > (*T)->Key) {
         deleteNode(x, &((*T)->Right));
     } else {
-        Tree temp = *T;
         if ((*T)->Left == NULL) {
             *T = (*T)->Right;
         } else if ((*T)->Right == NULL) {
@@ -18,6 +17,5 @@ void deleteNode(int x, Tree *T) {
             (*T)->Key = next->Key;
             deleteNode(next->Key, &((*T)->Right));
         }
-        free(temp);
     }
 }
