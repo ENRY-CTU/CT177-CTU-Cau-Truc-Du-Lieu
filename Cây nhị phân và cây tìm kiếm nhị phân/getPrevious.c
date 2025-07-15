@@ -28,7 +28,6 @@ Tree getPrevious(int x, Tree T){
     if(T->Key >= x) {
         return getPrevious(x, T->Left);
     } else {
-        Tree right = getPrevious(x, T->Right);
-        return (right != NULL) ? right : T;
+        return (getPrevious(x, T->Right) != NULL) ? getPrevious(x, T->Right) : T;
     }
 }
