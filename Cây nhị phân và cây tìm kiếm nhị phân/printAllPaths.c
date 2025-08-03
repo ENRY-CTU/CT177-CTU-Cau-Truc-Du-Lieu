@@ -1,7 +1,6 @@
 void printAllPaths(Tree T, DataType path[], int len, int pathlen)
 {
-	if(T == NULL)
-		return;
+	if(T == NULL) return;
 	path[len] = T->Data;
 	len++;
 	if(T->Left == NULL && T->Right == NULL && len == pathlen+1)
